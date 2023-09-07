@@ -3,16 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <!-- Add your CSS and JavaScript links here -->
+    <title>Bubble Tanks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        object {
+            width: 800px;
+            height: 600px;
+        }
+
+        /* Add a welcome text using CSS */
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Welcome to my website</h1>
     <script src="../../flash-emu/ruffle.js"></script>
 
-    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div>
         <object width="800" height="600">
             <param name="movie" value="bubble_tanks_1-1.swff">
-            <embed src="bubble_tanks_1-1.swf" width="800" height="600">
+            <ruffle-embed src="bubble_tanks_1-1.swf" width="800" height="600"></ruffle-embed>
         </object>
     </div>
 </body>
