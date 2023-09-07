@@ -64,13 +64,22 @@
             color: #fff;
         }
 
+        /* Add rounded corners to game images */
         .game-button img {
             width: 128px;
             height: 64px;
+            border-radius: 10px;
         }
 
         h2 {
             margin: 10px 0;
+        }
+
+        /* Category styles */
+        .category {
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 24px;
         }
     </style>
 </head>
@@ -81,33 +90,69 @@
     <div class="button-container">
         <a href="index.html" class="button">Home</a>
     </div>
-    
-    <!-- Game buttons -->
+
+    <!-- Category 1: Action Games -->
+    <div class="category">Action Games</div>
+
     <div class="game-button">
         <a href="games/bubbletanks1.html">
-            <img src="game-covers/bubble-tank1.jpg" alt="Bubble Tanks 1" width="128" height="64">
+            <img src="game-covers/bubble-tank1.jpg" alt="Bubble Tanks" width="128" height="64">
             <h2>Bubble Tanks</h2>
-            <p>Created by: JAred</p>
+            <p>Created by: Jared</p>
         </a>
     </div>
+
+    <div class="game-button">
+        <a href="games/actiongame2.html">
+            <img src="game-covers/action-game2.jpg" alt="Action Game 2" width="128" height="64">
+            <h2>Action Game 2</h2>
+            <p>Created by: Game Creator 2</p>
+        </a>
+    </div>
+
+    <!-- Add more action games here -->
+    
+    <!-- Category 2: Puzzle Games -->
+    <div class="category">Puzzle Games</div>
+
+    <div class="game-button">
+        <a href="games/puzzlegame1.html">
+            <img src="game-covers/puzzle-game1.jpg" alt="Puzzle Game 1" width="128" height="64">
+            <h2>Puzzle Game 1</h2>
+            <p>Created by: Game Creator 3</p>
+        </a>
+    </div>
+
+    <div class="game-button">
+        <a href="games/puzzlegame2.html">
+            <img src="game-covers/puzzle-game2.jpg" alt="Puzzle Game 2" width="128" height="64">
+            <h2>Puzzle Game 2</h2>
+            <p>Created by: Game Creator 4</p>
+        </a>
+    </div>
+
+    <!-- Add more puzzle games here -->
+
+    <!-- Category 3: Strategy Games -->
+    <div class="category">Strategy Games</div>
 
     <div class="game-button">
         <a href="games/crushthecastle1.html">
-            <img src="game-covers/ctcbaner.png" alt="Crush The Castle" width="128" height="64">
+            <img src="game-covers/ctcbaner.jpg" alt="Crush The Castle" width="128" height="64">
             <h2>Crush The Castle</h2>
-            <p>Created by: Armor Games Studios</p>
+            <p>Created by: Armor Games</p>
         </a>
     </div>
 
     <div class="game-button">
-        <a href="game3.html">
-            <img src="game3.jpg" alt="Game 3" width="128" height="64">
-            <h2>Game 3</h2>
-            <p>Created by: Creator 3</p>
+        <a href="games/strategygame2.html">
+            <img src="game-covers/strategy-game2.jpg" alt="Strategy Game 2" width="128" height="64">
+            <h2>Strategy Game 2</h2>
+            <p>Created by: Game Creator 6</p>
         </a>
     </div>
 
-    <!-- Add 7 more game buttons similarly -->
+    <!-- Add more strategy games here -->
     
 </body>
 </html>
