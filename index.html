@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
     <title>Z-Flash Math Games</title>
 
     <link rel="icon" href="favicon.png" type="image/x-icon">
@@ -76,9 +75,10 @@
             width: 200px;
             height: 200px;
             background-size: 200px 200px;
+            image-rendering: pixelated; /* Set texture filtering to pixelated */
         }
 
-        .front  { transform: translateZ(100px); background-image: url('Turmp.jpg'); }
+                .front  { transform: translateZ(100px); background-image: url('Turmp.jpg'); }
         .back   { transform: translateZ(-100px) rotateY(180deg); background-image: url('Gema.jpg'); }
         .left   { transform: translateX(-100px) rotateY(-90deg); background-image: url('CANGE.jpg'); }
         .right  { transform: translateX(100px) rotateY(90deg); background-image: url('Gema.jpg'); }
@@ -107,7 +107,7 @@
     <a href="index.html" class="button">Home</a>
 
     <!-- Games Button -->
-    <a href="games.html" class="button">Games</a>
+    <a href="games.html" class="button" onmouseover="changeSpeed(5)" onmouseout="changeSpeed(10)">Games</a>
 
     <div id="cube-container">
         <div id="cube">
@@ -121,9 +121,15 @@
     </div>
 
     <script>
+        function changeSpeed(speed) {
+            const cube = document.getElementById('cube');
+            cube.style.animationDuration = `${speed}s`;
+        }
+
         function goToPage(url) {
             window.location.href = url;
         }
     </script>
-</body>
-</html>
+
+
+</body></html>
