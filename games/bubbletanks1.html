@@ -7,16 +7,9 @@
     <!-- Add your CSS and JavaScript links here -->
 </head>
 <body>
-    <script>
-    window.RufflePlayer = window.RufflePlayer || {};
-    window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("container");
-        container.appendChild(player);
-        player.load("bubble_tanks_1-1.swf");
-    });
-  </script>
-  <script src="/flash-emu/ruffle.js"></script>
+    <object width="400" height="300">
+    <param name="movie" value="your-flash-file.swf">
+    <embed src="your-flash-file.swf" width="400" height="300">
+</object>
 </body>
 </html>
